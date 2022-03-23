@@ -6,13 +6,23 @@ const GlobalStyles = createGlobalStyle`
 	${reset}
 
 	body {
-    letter-spacing: -0.02em;
-    background-color: var(--light-gray);
-		color: #333;
+    letter-spacing: -0.04em;
+    background-color: #eee;
+		color: var(--black);
 		font-family: 'Pretendard Variable';
+		font-size: 12px;
   }
 
+	a {
+		text-decoration: none;
+		color: var(--black);
+		vertical-align: baseline;
+	}
+
 	:root {
+		--black: #1f334a;
+		--blue: #0077ff;
+
 	}
 `;
 
