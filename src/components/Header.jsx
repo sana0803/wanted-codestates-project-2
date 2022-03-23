@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
+import Search from './Search';
 
 const tabMenu = [
   { id: 0, title: '홈', address: '/' },
@@ -10,6 +12,9 @@ const tabMenu = [
 ];
 
 const Header = () => {
+  const matches = useSelector(state => state.data?.matchData);
+  console.log(matches);
+
   return (
     <HeaderWrap>
       <TopHeader>
@@ -28,17 +33,20 @@ const Header = () => {
         </a>
       </TopHeader>
       <BottomHeader>
-        <TabContainer>
-          <ListWrap>
-            {tabMenu.map((item, idx) => (
-              <TabList key={idx}>
-                <NavLink to={item.address} activeclassname="active">
-                  <div>{item.title}</div>
-                </NavLink>
-              </TabList>
-            ))}
-          </ListWrap>
-        </TabContainer>
+        <div id="inner">
+          <TabContainer>
+            <ListWrap>
+              {tabMenu.map((item, idx) => (
+                <TabList key={idx}>
+                  <NavLink to={item.address} activeclassname="active">
+                    <div>{item.title}</div>
+                  </NavLink>
+                </TabList>
+              ))}
+            </ListWrap>
+          </TabContainer>
+          <Search></Search>
+        </div>
       </BottomHeader>
     </HeaderWrap>
   );
@@ -57,11 +65,10 @@ const HeaderWrap = styled.div`
 const TopHeader = styled.div`
   width: 1000px;
   height: 48px;
-  background-color: aliceblue;
   position: relative;
 
   a:last-child {
-    color: #6c7a89;
+    color: var(--dark-gray);
     font-size: 12px;
     position: absolute;
     right: 0;
@@ -108,9 +115,15 @@ const TmiLogo = styled.a`
 `;
 
 const BottomHeader = styled.div`
-  width: 1000px;
+  width: 100%;
   height: 55px;
-  background-color: var(--blue);
+  background-color: var(--deep-blue);
+
+  #inner {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+  }
 `;
 
 const TabContainer = styled.div`
@@ -175,4 +188,5 @@ const TabList = styled.li`
     clear: both;
   }
 `;
+
 export default Header;
