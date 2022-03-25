@@ -12,7 +12,7 @@ const Search = () => {
   const keyup = async e => {
     const text = e.target.value;
     if (e.key === 'Enter') {
-      console.log('유저 검색 실행');
+      // console.log('유저 검색 실행');
       const userMatchData = await getUserInfo(text, 0);
       dispatch(setUserData(text, userMatchData));
       inputRef.current.value = '';
