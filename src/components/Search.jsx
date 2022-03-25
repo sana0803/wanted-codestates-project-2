@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import styled from 'styled-components';
 import { FaSearch } from 'react-icons/fa';
 import { useDispatch } from 'react-redux';
@@ -7,6 +7,7 @@ import { getUserInfo } from '../axios/axios.js';
 
 const Search = () => {
   const dispatch = useDispatch();
+  const inputRef = useRef();
   // const matches = useSelector(state => state.data?.matchData);
   // console.log(matches);
 
@@ -16,12 +17,18 @@ const Search = () => {
       console.log('유저 검색 실행');
       const userMatchData = await getUserInfo(text);
       dispatch(setUserData(text, userMatchData));
+      inputRef.current.value = '';
     }
   };
 
   return (
     <InputBox>
-      <SearchInput type="text" placeholder="닉네임 검색" onKeyUp={keyup} />
+      <SearchInput
+        type="text"
+        placeholder="닉네임 검색"
+        ref={inputRef}
+        onKeyUp={keyup}
+      />
       <span>
         <FaSearch color="#fff" />
       </span>

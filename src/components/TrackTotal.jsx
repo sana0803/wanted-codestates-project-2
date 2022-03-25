@@ -22,7 +22,7 @@ const TrackTotal = () => {
       </TopTable>
       <BottomTable>
         <TableBox>
-          <thread>
+          <tbody className="thread">
             <tr>
               <th>선택</th>
               <th>트랙</th>
@@ -31,8 +31,8 @@ const TrackTotal = () => {
               <th>기록</th>
               <th>상위</th>
             </tr>
-          </thread>
-          <tbody>
+          </tbody>
+          <tbody className="tbody-box">
             <tr className="active">
               <td>
                 <input type="radio" />
@@ -132,7 +132,7 @@ export const TableBox = styled.table`
   border-collapse: collapse;
   border-spacing: 0;
 
-  thread {
+  .thread {
     display: table-header-group;
     background-color: #fbfbfb;
 
@@ -160,7 +160,7 @@ export const TableBox = styled.table`
       }
     }
   }
-  tbody {
+  .tbody-box {
     display: table-row-group;
     tr {
       box-sizing: border-box;

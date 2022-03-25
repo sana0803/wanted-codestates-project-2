@@ -23,7 +23,7 @@ const KartTotal = () => {
       </TopTable>
       <BottomTable>
         <TableBox>
-          <thread>
+          <tbody className="thread">
             <tr>
               <th>선택</th>
               <th>카트</th>
@@ -31,8 +31,8 @@ const KartTotal = () => {
               <th>승률</th>
               <th>리타율</th>
             </tr>
-          </thread>
-          <tbody>
+          </tbody>
+          <tbody className="tbody-box">
             <tr className="active">
               <td>
                 <input type="radio" />

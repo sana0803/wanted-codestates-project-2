@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { useSelector } from 'react-redux';
+// import { useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import Search from './Search';
 
@@ -12,8 +12,8 @@ const tabMenu = [
 ];
 
 const Header = () => {
-  const matches = useSelector(state => state.data?.matchData);
-  console.log(matches);
+  // const matches = useSelector(state => state.data?.matchData);
+  // console.log(matches);
 
   return (
     <HeaderWrap>

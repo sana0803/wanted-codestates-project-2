@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { FaUser } from 'react-icons/fa';
 import { FaUsers } from 'react-icons/fa';
 
-const Button = () => {
+const TeamButton = () => {
   const [isSelected, setIsSelected] = useState(true);
   // console.log(isSelected);
 
@@ -38,51 +38,46 @@ const Button = () => {
 const TeamSelect = styled.div`
   position: relative;
   display: inline-block;
-  padding-right: 15px;
+  top: 20px;
+  left: 10px;
 
-  ::after {
+  /* ::after {
     content: '';
     position: absolute;
     display: inline-block;
-    top: 27px;
-    right: 0;
+    top: 5px;
+    right: -12px;
     width: 1px;
     height: 14px;
     background-color: #ececec;
-  }
-
+  } */
   div {
-    background: #fff;
-    border-color: var(--blue);
-    border-style: solid;
     vertical-align: middle;
     display: inline-block;
-    margin-top: 20px;
     width: 100px;
     height: 25px;
     line-height: 25px;
     font-size: 12px;
     font-weight: 400;
     text-align: center;
+    border-style: solid;
+    border-color: #fff;
     cursor: pointer;
-    color: var(--blue);
+    color: #fff;
 
     :hover {
-      color: #fff;
-      background: var(--blue);
+      color: var(--deep-blue);
+      background: #fff;
     }
-
     span {
       vertical-align: middle;
-      /* background-color: yellow; */
       margin-right: 10px;
       line-height: 1;
     }
   }
-
   .active {
-    background: var(--blue);
-    color: #fff;
+    background: #fff;
+    color: var(--deep-blue);
   }
 `;
 
@@ -95,4 +90,4 @@ const Team = styled.div`
   border-width: 0.7px 0.7px 0.7px 0.7px;
   border-radius: 0 5px 5px 0;
 `;
-export default Button;
+export default TeamButton;

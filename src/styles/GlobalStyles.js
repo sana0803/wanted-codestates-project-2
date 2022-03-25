@@ -31,6 +31,16 @@ const GlobalStyles = createGlobalStyle`
 		font-family: 'Noto Sans KR', sans-serif;
 	}
 
+	.blue {
+		color: var(--blue);
+  }
+  .green {
+    color: #9bd728;
+  }
+  .red {
+    color: #f62459;
+  }
+
 	:root {
 		--black: #1f334a;
 		--deep-blue: #005fcc;

@@ -53,4 +53,16 @@ export const StatTitle = styled.h5`
     color: var(--blue);
   }
 `;
+
+export const SummaryText = styled.p`
+  position: absolute;
+  top: 14px;
+  right: 20px;
+  font-size: 12px;
+  /* font-weight: 500; */
+  vertical-align: middle;
+  span {
+    margin-left: 5px;
+  }
+`;
 export default UserStat;
