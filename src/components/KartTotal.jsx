@@ -1,5 +1,5 @@
 import React from 'react';
-// import styled from 'styled-components';
+// import { kartListObj } from '../util/trackData';
 import { TableTitle } from './TrackTotal';
 import { TopTable } from './TrackTotal';
 import { DataTitle } from './TrackTotal';
