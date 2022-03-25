@@ -44,12 +44,12 @@ const StatTotal = () => {
           <ProgressCircle>
             <Circle>
               <div className="full circle-slice"></div>
-              <div className="circle-slice fill-green">
+              <div className="circle-slice">
                 <CircleFill className="circle-fill red fill-red"></CircleFill>
                 <div className="bar"></div>
               </div>
             </Circle>
-            <span className="red fill-red">1%</span>
+            <span className="red fill-red">10%</span>
             <CircleOverlay></CircleOverlay>
           </ProgressCircle>
         </PieChartBox>
