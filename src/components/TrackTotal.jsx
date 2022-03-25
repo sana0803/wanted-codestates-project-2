@@ -2,6 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 
 const TrackTotal = () => {
+  // const { nickName, matches } = useSelector(state => ({
+  //   nickName: state.data?.nickName,
+  //   matches: state.data?.matchData,
+  // }));
+  // console.log(matches);
+  // const character = matches.matches[0].player.character;
+
   const mapImg =
     'https://s3-ap-northeast-1.amazonaws.com/solution-userstats/kartimg/Category/korea_1.png';
 

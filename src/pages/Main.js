@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+// import { useSelector } from 'react-redux';
 // import { getUserInfo } from '../axios/axios.js';
-import { useSelector } from 'react-redux';
 // import { setUserData } from '../action';
 // import { getItems } from '../util/localStorage';
 import Header from '../components/Header.jsx';
@@ -16,11 +16,11 @@ const Main = () => {
   //   getItems('nickname') ? getItems('nickname') : 'BBEESSTT',
   // );
 
-  const { nickName, matches } = useSelector(state => ({
-    nickName: state.data?.nickName,
-    matches: state.data?.matchData,
-  }));
-  console.log(nickName, matches);
+  // const { nickName, matches } = useSelector(state => ({
+  //   nickName: state.data?.nickName,
+  //   matches: state.data?.matchData,
+  // }));
+  // console.log(nickName, matches);
 
   // useEffect(() => {
   //   const fetchData = async () => {
