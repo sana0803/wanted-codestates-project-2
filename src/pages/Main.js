@@ -1,31 +1,36 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import styled from 'styled-components';
-import { getUserInfo } from '../axios/axios.js';
-import { useSelector, useDispatch } from 'react-redux';
-import { setUserData } from '../action';
+// import { getUserInfo } from '../axios/axios.js';
+import { useSelector } from 'react-redux';
+// import { setUserData } from '../action';
 // import { getItems } from '../util/localStorage';
 import Header from '../components/Header.jsx';
 import UserInfo from '../components/UserInfo.jsx';
 import UserStat from '../components/UserStat.jsx';
+import Tab from '../components/Tab.jsx';
+import Information from '../components/Information.jsx';
 
 const Main = () => {
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
   // const [nickname, setNickname] = useState(
   //   getItems('nickname') ? getItems('nickname') : 'BBEESSTT',
   // );
 
-  const matches = useSelector(state => state.data?.matchData);
-  console.log(matches);
+  const { nickName, matches } = useSelector(state => ({
+    nickName: state.data?.nickName,
+    matches: state.data?.matchData,
+  }));
+  console.log(nickName, matches);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      console.log('api 요청이 실행됩니다.');
-      const userMatchData = await getUserInfo('BBEESSTT');
-      // console.log(userMatchData);
-      dispatch(setUserData(userMatchData));
-    };
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     console.log('api 요청이 실행됩니다.');
+  //     const userMatchData = await getUserInfo('BBEESSTT');
+  //     // console.log(userMatchData);
+  //     dispatch(setUserData(userMatchData));
+  //   };
+  //   fetchData();
+  // }, []);
   return (
     <div>
       {/* 개인전적 조회 페이지 */}
@@ -33,6 +38,8 @@ const Main = () => {
       <Container>
         <UserInfo></UserInfo>
         <UserStat></UserStat>
+        <Tab></Tab>
+        <Information />
       </Container>
     </div>
   );

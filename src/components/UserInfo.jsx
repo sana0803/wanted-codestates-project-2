@@ -16,14 +16,13 @@ const UserInfo = () => {
   // const { matches } = useSelector(state => ({
   //   matches: state.data?.matchData,
   // }));
-  const matches = useSelector(state => state.data?.matchData);
+  const { nickName, matches } = useSelector(state => ({
+    nickName: state.data?.nickName,
+    matches: state.data?.matchData,
+  }));
   console.log(matches);
-  const character = matches[matches];
-  console.log(character);
-
-  // const userImg = `https://s3-ap-northeast-1.amazonaws.com/solution-userstats/metadata/character/${character}.png`;
-  const userImg =
-    'https://s3-ap-northeast-1.amazonaws.com/solution-userstats/metadata/character/201c61527a04d85cd2de0dad75ab0878ee4125129e57aabe47b3d3ac06df8d67.png';
+  const character = matches.matches[0].player.character;
+  const userImg = `https://s3-ap-northeast-1.amazonaws.com/solution-userstats/metadata/character/${character}.png`;
 
   // useEffect(() => {
   //   const data = getUserInfo('BBEESSTT');
@@ -46,7 +45,7 @@ const UserInfo = () => {
           </UserImg>
           <UserNameBox>
             <h1>
-              {matches.nickName}
+              {nickName}
               <span></span>
             </h1>
             <Button></Button>
@@ -74,7 +73,7 @@ const UserInfo = () => {
         </Nick>
       </UserProfile>
       <VsBox>
-        1대1 매칭 시뮬레이터 - {matches.nickName}와 가상 대결을 펼쳐보세요.
+        1대1 매칭 시뮬레이터 - {nickName}와 가상 대결을 펼쳐보세요.
         <div>
           <RoundBtn color={'#fff'}>
             <FaCalculator />
@@ -237,8 +236,8 @@ const VsBox = styled.div`
     display: inline-block;
     top: 0;
     right: 0;
-    margin-top: -10px;
-    margin-right: 20px;
+    margin-top: -12px;
+    margin-right: 10px;
   }
 `;
 

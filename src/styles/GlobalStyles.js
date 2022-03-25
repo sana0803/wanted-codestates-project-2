@@ -10,9 +10,10 @@ const GlobalStyles = createGlobalStyle`
     background-color: #fafafa;
     min-height: 800px;
     padding-bottom: 100px;
-    letter-spacing: -0.04em;
+    letter-spacing: -1px;
 		color: var(--black);
-		font-family: 'Pretendard Variable';
+		font-family: 'Noto Sans KR', sans-serif;
+		font-weight: 400;
 		font-size: 12px;
   }
 
@@ -27,7 +28,7 @@ const GlobalStyles = createGlobalStyle`
 	}
 
 	button {
-		font-family: 'Pretendard Variable';
+		font-family: 'Noto Sans KR', sans-serif;
 	}
 
 	:root {

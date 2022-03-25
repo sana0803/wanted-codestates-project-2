@@ -15,7 +15,7 @@ const Search = () => {
     if (e.key === 'Enter') {
       console.log('유저 검색 실행');
       const userMatchData = await getUserInfo(text);
-      dispatch(setUserData(userMatchData));
+      dispatch(setUserData(text, userMatchData));
     }
   };
 
@@ -66,7 +66,7 @@ const SearchInput = styled.input`
   border: none;
   border-bottom: 1px solid #fff;
   opacity: 0.5;
-  font-family: 'Pretendard Variable';
+  font-family: 'Noto Sans KR', sans-serif;
   transition: 0.3s ease;
   /* padding: 1px 2px; */
 
@@ -76,7 +76,7 @@ const SearchInput = styled.input`
 
   ::placeholder {
     color: #fff;
-    font-family: 'Pretendard Variable';
+    font-family: 'Noto Sans KR', sans-serif;
     font-weight: 500;
   }
   :hover {

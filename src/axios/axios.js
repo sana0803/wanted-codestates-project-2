@@ -1,7 +1,11 @@
 import axios from 'axios';
 import { headers } from '../constants';
 import { setItems } from '../util/localStorage';
+// import { useDispatch } from 'react-redux';
+// import { initialUserData } from '../util/dummyUserData';
+// import { setUserData } from '../action';
 
+// const dispatch = useDispatch();
 export const getUserInfo = async nickname => {
   try {
     const response = await axios({
@@ -20,12 +24,15 @@ export const getUserInfo = async nickname => {
       .then(res => res.data)
       .then(matchData => {
         // console.log(matchData);
-        setItems('nickname', matchData);
-        return matchData;
+        const matchList = matchData.matches[0];
+        console.log(matchList);
+        setItems('nickname', matchList);
+        return matchList;
       });
   } catch (error) {
     alert('검색 결과가 없습니다.');
     console.log(error);
+    // dispatch(setUserData('BBEESSTT', ...initialUserData));
     // to do : 검색 결과 없을 시 에러 처리, bbeesstt 넣어주기
     // getUserInfo('BBEESSTT');
   }

@@ -1,23 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
+import StatTotal from './StatTotal';
+import StatRank from './StatRank';
+import Message from './Message';
 
 const UserStat = () => {
   return (
     <StatWrapper>
       <StatBox>
-        <StatTitle>
-          <span>종합</span> 전적
-        </StatTitle>
+        <StatTotal />
       </StatBox>
       <StatBox>
-        <StatTitle>
-          <span>순위변동</span> 추이
-        </StatTitle>
+        <StatRank />
       </StatBox>
       <StatBox>
-        <StatTitle>
-          <span>응원</span> 한마디
-        </StatTitle>
+        <Message />
       </StatBox>
     </StatWrapper>
   );
@@ -29,7 +26,7 @@ const StatWrapper = styled.div`
   height: 266px;
   display: flex;
   /* flex-wrap: nowrap; */
-  background-color: yellowgreen;
+  /* background-color: yellowgreen; */
 
   > div:last-child {
     margin-right: 0;
@@ -44,7 +41,7 @@ const StatBox = styled.div`
   border: 1px solid #f2f2f2;
 `;
 
-const StatTitle = styled.h5`
+export const StatTitle = styled.h5`
   margin: 0 12px;
   padding: 0 8px;
   line-height: 40px;
