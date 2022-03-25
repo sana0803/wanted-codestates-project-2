@@ -1,17 +1,20 @@
-## Package
+# 넥슨코리아 기업과제
 
-### dependencies
+### 🚀 배포 링크
 
-- styled-components
-- styled-reset
 
-### devDependencies
 
-- "eslint": "^8.9.0"
-- "eslint-config-prettier": "^8.4.0",
-- "eslint-plugin-import": "^2.25.4",
-- "eslint-plugin-jsx-a11y": "^6.5.1",
-- "eslint-plugin-prettier": "^4.0.0",
-- "eslint-plugin-react": "^7.28.0",
-- "eslint-plugin-react-hooks": "^4.3.0",
-- "prettier": "^2.5.1"
+### 💻 실행 방법
+
+
+
+###  ✨기술 스택
+
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
+
+
+
+
+
+### 👩‍💻구현
+

@@ -8,8 +8,6 @@ import { getUserInfo } from '../axios/axios.js';
 const Search = () => {
   const dispatch = useDispatch();
   const inputRef = useRef();
-  // const matches = useSelector(state => state.data?.matchData);
-  // console.log(matches);
 
   const keyup = async e => {
     const text = e.target.value;

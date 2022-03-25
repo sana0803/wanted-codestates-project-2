@@ -19,7 +19,7 @@ const KartTotal = () => {
         <DataTitle>
           <span className="badge">일반</span>폭스 V1
         </DataTitle>
-        <GraphBox>여기에 카트가 들어감</GraphBox>
+        <GraphBox>카트 정보</GraphBox>
       </TopTable>
       <BottomTable>
         <TableBox>

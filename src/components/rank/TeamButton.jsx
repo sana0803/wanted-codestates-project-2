@@ -5,7 +5,6 @@ import { FaUsers } from 'react-icons/fa';
 
 const TeamButton = () => {
   const [isSelected, setIsSelected] = useState(true);
-  // console.log(isSelected);
 
   return (
     <TeamSelect>

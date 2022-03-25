@@ -1,20 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
-// import { useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import Search from './Search';
 
 const tabMenu = [
   { id: 0, title: '홈', address: '/' },
   { id: 1, title: '랭킹', address: '/rank' },
-  { id: 2, title: '카트', address: '/kart' },
-  { id: 2, title: '트랙', address: '/track' },
+  // { id: 2, title: '카트', address: '/kart' },
+  // { id: 3, title: '트랙', address: '/track' },
 ];
 
 const Header = () => {
-  // const matches = useSelector(state => state.data?.matchData);
-  // console.log(matches);
-
   return (
     <HeaderWrap>
       <TopHeader>
