@@ -25,8 +25,6 @@ const StatWrapper = styled.div`
   width: 100%;
   height: 266px;
   display: flex;
-  /* flex-wrap: nowrap; */
-  /* background-color: yellowgreen; */
 
   > div:last-child {
     margin-right: 0;
@@ -59,7 +57,6 @@ export const SummaryText = styled.p`
   top: 14px;
   right: 20px;
   font-size: 12px;
-  /* font-weight: 500; */
   vertical-align: middle;
   span {
     margin-left: 5px;

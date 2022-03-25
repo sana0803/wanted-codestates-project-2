@@ -9,8 +9,6 @@ import { FaRedo } from 'react-icons/fa';
 import { FaBell } from 'react-icons/fa';
 import { FaShareAlt } from 'react-icons/fa';
 import { FaCalculator } from 'react-icons/fa';
-// import { getItems, setItems } from '../util/localStorage';
-// import { getUserInfo } from '../axios/axios.js';
 
 const UserInfo = () => {
   const { nickName, matches } = useSelector(state => ({
@@ -20,12 +18,6 @@ const UserInfo = () => {
   console.log(matches);
   const character = matches.matches[0].player.character;
   const userImg = `https://s3-ap-northeast-1.amazonaws.com/solution-userstats/metadata/character/${character}.png`;
-
-  // useEffect(() => {
-  //   const data = getUserInfo('BBEESSTT');
-  //   console.log(data);
-  //   setUser(data);
-  // }, []);
 
   return (
     <Wrapper>

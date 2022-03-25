@@ -9,8 +9,6 @@ const Message = () => {
   const [msgList, setMsgList] = useState([]);
   const [btnDisable, setBtnDisable] = useState('disabled');
 
-  // console.log(msgList);
-
   const sendMessage = () => {
     setMsgList(msgList.concat({ nick: `${msgNick}`, text: `${msgText}` }));
     setBtnDisable('disabled');

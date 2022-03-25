@@ -28,7 +28,6 @@ const BlueBox = styled.div`
 
 const PageDesc = styled.div`
   width: 1000px;
-  /* width: 1300px; */
   position: relative;
   z-index: 5;
   padding-top: 50px;

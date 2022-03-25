@@ -5,7 +5,6 @@ import { FaUsers } from 'react-icons/fa';
 
 const Button = () => {
   const [isSelected, setIsSelected] = useState(true);
-  // console.log(isSelected);
 
   return (
     <TeamSelect>
@@ -74,7 +73,6 @@ const TeamSelect = styled.div`
 
     span {
       vertical-align: middle;
-      /* background-color: yellow; */
       margin-right: 10px;
       line-height: 1;
     }

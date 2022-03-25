@@ -63,7 +63,7 @@ const TrackTotal = () => {
           코리아 제주 해오름 다운힐
           <span className="graph-name">&nbsp;&nbsp;기록분포</span>
         </DataTitle>
-        <GraphBox>여기에 차트</GraphBox>
+        <GraphBox>전적 차트</GraphBox>
       </TopTable>
       <BottomTable>
         <TableBox>
