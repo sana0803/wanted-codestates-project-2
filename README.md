@@ -14,12 +14,7 @@ $ npm install
 $ npm run start
 ```
 
-```
-* 개인 github public 프로젝트 링크 공유(프로젝트명 무관)
-* 결과물에 대한 전반적인 설명과 그래프, 애니메이션 적용 지점을 README 파일에 기제
-* 제출된 코드는 수정없이 빌드 및 로컬 실행이 가능해야 함
-* 불필요한 코드가 포함되지 않도록 gitignore 파일 적용 필수
-```
+
 
 ###  ✨기술 스택
 
@@ -42,6 +37,25 @@ $ npm run start
 
 
 
+**애니메이션 및 기능** 
+
+- 상단 내비게이션 바, input 창
+- 1대1 매칭 가상대결 그라디언트 배경
+
+![ani_1](https://user-images.githubusercontent.com/82338010/160147346-37cd09ad-2e68-4b83-b289-b6925c15e52f.gif)
+
+- 통합, 매우빠름, 무한부스터 탭, 응원 메시지 남기기
+
+![ani_2](https://user-images.githubusercontent.com/82338010/160148584-1bc35ff8-123d-4422-bb46-eb4a637cde11.gif)
+
+- 랭킹 페이지 배경 파도 애니메이션
+
+![ani_4](https://user-images.githubusercontent.com/82338010/160151062-106c2ca5-5518-44c3-b450-dae2fc853aef.gif)
+
+- 유저 검색 / 매치 정보에 따른 트랙 전적 (하단)
+
+![ani_3](https://user-images.githubusercontent.com/82338010/160150560-35d54993-bc34-4ccd-9dc2-7036e00f8edf.gif)
+
 
 
 ### 🤔 회고
@@ -63,4 +77,3 @@ $ npm run start
 - 랭킹 페이지
   - 데이터 가공 😭 (이 부분은 데이터를 어떻게 받아와서 가공해야할지 감조차 잡지 못했습니다)
   - 카트나 트랙 페이지도 마찬가지... API 데이터 분석에 애를 먹었습니다
-
