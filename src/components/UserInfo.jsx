@@ -15,7 +15,7 @@ const UserInfo = () => {
     nickName: state.data?.nickName,
     matches: state.data?.matchData,
   }));
-  console.log(matches);
+  // console.log(matches);
   const character = matches.matches[0].player.character;
   const userImg = `https://s3-ap-northeast-1.amazonaws.com/solution-userstats/metadata/character/${character}.png`;
 
